@@ -15,6 +15,8 @@
                                                                android:layout_height="wrap_content"
                                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                                                android:layout_marginBottom="8dp"
+                                                               android:id="@+id/amountInputLayout"
+                                                               app:errorEnabled="true"
                                                                android:hint="@string/add_amount">
 
             <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
@@ -25,13 +27,15 @@
 
         <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
                                                                android:layout_height="wrap_content"
+                                                               android:id="@+id/nameInputLayout"
+                                                               android:layout_marginBottom="16dp"
+                                                               app:errorEnabled="true"
                                                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                                                                android:hint="@string/add_who">
 
             <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
                                                                      android:layout_height="match_parent"
-                                                                     android:id="@+id/nameInput"
-                                                                     android:layout_marginBottom="16dp"/>
+                                                                     android:id="@+id/nameInput"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
