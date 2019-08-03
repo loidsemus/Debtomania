@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Debtomania</string>
+    <string name="action_add">Legg til</string>
+    <string name="add_amount">" Beløp noen skylder deg"</string>
+    <string name="add_done">" Ferdig"</string>
+    <string name="add_who">" Hvem skylder deg"</string>
+    <string name="debt_archived">" Gjeld arkivert"</string>
+    <string name="debt_deleted">" Gjeld fjernet"</string>
+    <string name="debt_details">fra %1$s, %2$s</string>
+    <string name="debts">" Gjeld"</string>
+    <string name="no_debts">" Ingen gjeld"</string>
+    <string name="no_debts_sub">" Ingen skylder deg noe!"</string>
+    <string name="settings">Innstillinger</string>
+    <string name="settings_about">Debtomania av loidsemus</string>
+    <string name="settings_general">Generelt</string>
+    <string name="settings_general_dark_mode">" Mørk modus"</string>
+    <string name="settings_general_dark_mode_summary">" Vil ta grep etter full appstart"</string>
+</resources>

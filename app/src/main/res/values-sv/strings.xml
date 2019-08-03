@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Debtomania</string>
+    <string name="action_add">Lägg till</string>
+    <string name="debt_details">av %1$s, %2$s</string>
+    <string name="debts">Skulder</string>
+    <string name="settings">Inställningar</string>
+    <string name="settings_general">Generellt</string>
+    <string name="settings_general_dark_mode">Mörkt läge</string>
+    <string name="settings_about">Debtomania av loidsemus</string>
+    <string name="settings_general_dark_mode_summary">Kommer appliceras efter hel appomstart</string>
+    <string name="add_amount">Mängd någon är skyldig dig</string>
+    <string name="add_who">Vem som är skyldig dig</string>
+    <string name="add_done">Klar</string>
+    <string name="no_debts">Inga skulder</string>
+    <string name="no_debts_sub">Ingen är skyldig dig något!</string>
+    <string name="debt_deleted">Skuld borttagen</string>
+    <string name="debt_archived">Skuld arkiverad</string>
+</resources>

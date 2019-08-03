@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base app theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="mainBackgroundColor">#FFFFFF</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="debtItemBackgroundColor">#F6F6F6</item>
+        <item name="addIcon">@drawable/ic_action_add</item>
+        <item name="swipeDeleteColor">#ef5350</item>
+        <item name="swipeArchiveColor">#66bb6a</item>
+    </style>
+
+    <!-- Dark app theme -->
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="mainBackgroundColor">#000000</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="debtItemBackgroundColor">#141414</item>
+        <item name="addIcon">@drawable/ic_action_add_dark</item>
+        <item name="swipeDeleteColor">#b71c1c</item>
+        <item name="swipeArchiveColor">#1b5e20</item>
+    </style>
+
+</resources>
