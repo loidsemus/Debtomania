@@ -2,7 +2,6 @@ package me.loidsemus.debtomania.screens.debts
 
 import android.os.Bundle
 import android.view.*
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -13,7 +12,6 @@ import kotlinx.android.synthetic.main.debts_fragment.*
 import kotlinx.android.synthetic.main.debts_fragment.view.*
 import me.loidsemus.debtomania.R
 import me.loidsemus.debtomania.SharedViewModel
-import me.loidsemus.debtomania.databinding.DebtsFragmentBinding
 
 
 class DebtsFragment : Fragment() {
@@ -21,9 +19,7 @@ class DebtsFragment : Fragment() {
     private lateinit var viewModel: SharedViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val binding: DebtsFragmentBinding = DataBindingUtil.inflate(
-            inflater, R.layout.debts_fragment, container, false
-        )
+        val root = inflater.inflate(R.layout.debts_fragment, container, false)
 
         setHasOptionsMenu(true)
 
@@ -31,10 +27,8 @@ class DebtsFragment : Fragment() {
             ViewModelProviders.of(this).get(SharedViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
 
-        binding.viewModel = viewModel
-
         val adapter = DebtListAdapter(activity!!, viewModel)
-        val recyclerView = binding.root.recyclerView.apply {
+        val recyclerView = root.recyclerView.apply {
             layoutManager = LinearLayoutManager(context)
             this.adapter = adapter
         }
@@ -51,7 +45,7 @@ class DebtsFragment : Fragment() {
             }
         })
 
-        return binding.root
+        return root
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

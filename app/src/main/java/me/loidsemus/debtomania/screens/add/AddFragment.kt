@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
@@ -14,7 +13,6 @@ import kotlinx.android.synthetic.main.add_fragment.view.amountInput
 import me.loidsemus.debtomania.R
 import me.loidsemus.debtomania.SharedViewModel
 import me.loidsemus.debtomania.database.Debt
-import me.loidsemus.debtomania.databinding.AddFragmentBinding
 
 
 class AddFragment : Fragment() {
@@ -22,20 +20,18 @@ class AddFragment : Fragment() {
     private lateinit var viewModel: SharedViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val binding: AddFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.add_fragment, container, false)
+        val root = inflater.inflate(R.layout.add_fragment, container, false)
 
         viewModel = activity?.run {
             ViewModelProviders.of(this).get(SharedViewModel::class.java)
         } ?: throw Exception("Invalid Activity")
 
-        binding.viewModel = viewModel
-
-        binding.root.doneButton.setOnClickListener {
+        root.doneButton.setOnClickListener {
             if (validate()) {
                 val debt = Debt(
                     0,
-                    binding.root.amountInput.text.toString().toDouble(),
-                    binding.root.nameInput.text.toString(),
+                    root.amountInput.text.toString().toDouble(),
+                    root.nameInput.text.toString(),
                     System.currentTimeMillis()
                 )
                 viewModel.insert(debt)
@@ -43,7 +39,7 @@ class AddFragment : Fragment() {
             }
         }
 
-        return binding.root
+        return root
     }
 
     private fun validate(): Boolean {

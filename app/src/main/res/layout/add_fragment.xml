@@ -1,47 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <data>
-        <variable name="viewModel" type="me.loidsemus.debtomania.SharedViewModel"/>
-    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+              android:layoutAnimation="@anim/layout_animation_fall_down">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="16dp"
-            android:layoutAnimation="@anim/layout_animation_fall_down">
-
-        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
-                                                               android:layout_height="wrap_content"
-                                                               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                                               android:layout_marginBottom="8dp"
-                                                               android:id="@+id/amountInputLayout"
-                                                               app:errorEnabled="true"
-                                                               android:hint="@string/add_amount">
-
-            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
-                                                                     android:layout_height="match_parent"
-                                                                     android:id="@+id/amountInput"
-                                                                     android:inputType="numberDecimal"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
-                                                               android:layout_height="wrap_content"
-                                                               android:id="@+id/nameInputLayout"
-                                                               android:layout_marginBottom="16dp"
-                                                               app:errorEnabled="true"
-                                                               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                                               android:hint="@string/add_who">
-
-            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
-                                                                     android:layout_height="match_parent"
-                                                                     android:id="@+id/nameInput"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
                                                            android:layout_height="wrap_content"
-                                                           android:text="@string/add_done"
-                                                           android:id="@+id/doneButton"/>
+                                                           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                           android:layout_marginBottom="8dp"
+                                                           android:id="@+id/amountInputLayout"
+                                                           app:errorEnabled="true"
+                                                           android:hint="@string/add_amount">
 
-    </LinearLayout>
-</layout>
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
+                                                                 android:layout_height="match_parent"
+                                                                 android:id="@+id/amountInput"
+                                                                 android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+                                                           android:layout_height="wrap_content"
+                                                           android:id="@+id/nameInputLayout"
+                                                           android:layout_marginBottom="16dp"
+                                                           app:errorEnabled="true"
+                                                           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                           android:hint="@string/add_who">
+
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
+                                                                 android:layout_height="match_parent"
+                                                                 android:id="@+id/nameInput"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:text="@string/add_done"
+                                                       android:id="@+id/doneButton"/>
+
+</LinearLayout>
