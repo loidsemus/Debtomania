@@ -8,7 +8,6 @@
     <string name="settings_general">Generellt</string>
     <string name="settings_general_dark_mode">Mörkt läge</string>
     <string name="settings_about">Debtomania av loidsemus</string>
-    <string name="settings_general_dark_mode_summary">Kommer appliceras efter hel appomstart</string>
     <string name="add_amount">Mängd någon är skyldig dig</string>
     <string name="add_who">Vem som är skyldig dig</string>
     <string name="add_done">Klar</string>

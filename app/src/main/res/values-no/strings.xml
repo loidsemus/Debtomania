@@ -15,5 +15,4 @@
     <string name="settings_about">Debtomania av loidsemus</string>
     <string name="settings_general">Generelt</string>
     <string name="settings_general_dark_mode">" Mørk modus"</string>
-    <string name="settings_general_dark_mode_summary">" Vil ta grep etter full appstart"</string>
 </resources>

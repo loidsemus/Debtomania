@@ -4,8 +4,7 @@
     <PreferenceCategory android:key="general_category"
                         android:title="@string/settings_general">
 
-        <SwitchPreference android:key="dark_mode" android:title="@string/settings_general_dark_mode"
-                          android:summary="@string/settings_general_dark_mode_summary"/>
+        <SwitchPreference android:key="dark_mode" android:title="@string/settings_general_dark_mode"/>
 
     </PreferenceCategory>
 

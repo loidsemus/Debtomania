@@ -7,7 +7,6 @@
     <string name="settings_general">General</string>
     <string name="settings_general_dark_mode">Dark mode</string>
     <string name="settings_about">Debtomania by loidsemus</string>
-    <string name="settings_general_dark_mode_summary">Will apply after full app restart</string>
     <string name="add_done">Done</string>
     <string name="add_amount">Amount you\'re owed</string>
     <string name="add_who">Who owes you</string>
