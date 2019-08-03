@@ -46,14 +46,18 @@ class AddFragment : Fragment() {
         var valid = false
 
         if (amountInput.text.toString() == "") {
+            amountInputLayout.isErrorEnabled = true
             amountInputLayout.error = getString(R.string.add_error_no_amount)
         } else {
+            amountInputLayout.isErrorEnabled = false
             amountInputLayout.error = null
         }
 
         if (nameInput.text.toString() == "") {
+            nameInputLayout.isErrorEnabled = true
             nameInputLayout.error = getString(R.string.add_error_no_name)
         } else {
+            nameInputLayout.isErrorEnabled = false
             nameInputLayout.error = null
         }
 
