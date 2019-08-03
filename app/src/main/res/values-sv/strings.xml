@@ -15,4 +15,6 @@
     <string name="no_debts_sub">Ingen är skyldig dig något!</string>
     <string name="debt_deleted">Skuld borttagen</string>
     <string name="debt_archived">Skuld arkiverad</string>
+    <string name="add_error_no_amount">Du måste skriva en mängd</string>
+    <string name="add_error_no_name">Du måste skriva ett namn</string>
 </resources>

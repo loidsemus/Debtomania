@@ -15,4 +15,6 @@
     <string name="settings_about">Debtomania av loidsemus</string>
     <string name="settings_general">Generelt</string>
     <string name="settings_general_dark_mode">" Mørk modus"</string>
+    <string name="add_error_no_amount">Du må skrive inn et beløp</string>
+    <string name="add_error_no_name">" Du må skrive inn et navn"</string>
 </resources>

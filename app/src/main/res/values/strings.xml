@@ -14,4 +14,6 @@
     <string name="no_debts_sub">You\'re not owed anything!</string>
     <string name="debt_deleted">Debt deleted</string>
     <string name="debt_archived">Debt archived</string>
+    <string name="add_error_no_amount">You need to specify an amount</string>
+    <string name="add_error_no_name">You need to specify a name</string>
 </resources>

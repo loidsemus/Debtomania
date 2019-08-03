@@ -50,13 +50,13 @@ class AddFragment : Fragment() {
         var valid = false
 
         if (amountInput.text.toString() == "") {
-            amountInputLayout.error = "You need to specify an amount"
+            amountInputLayout.error = getString(R.string.add_error_no_amount)
         } else {
             amountInputLayout.error = null
         }
 
         if (nameInput.text.toString() == "") {
-            nameInputLayout.error = "You need to specify a name"
+            nameInputLayout.error = getString(R.string.add_error_no_name)
         } else {
             nameInputLayout.error = null
         }
