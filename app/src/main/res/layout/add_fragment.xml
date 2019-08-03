@@ -4,12 +4,14 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:padding="16dp"
               android:layoutAnimation="@anim/layout_animation_fall_down">
 
     <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
                                                            android:layout_height="wrap_content"
                                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                                           android:layout_marginStart="@dimen/side_margin"
+                                                           android:layout_marginEnd="@dimen/side_margin"
+                                                           android:layout_marginTop="@dimen/top_margin"
                                                            android:layout_marginBottom="8dp"
                                                            android:id="@+id/amountInputLayout"
                                                            app:errorEnabled="true"
@@ -24,6 +26,9 @@
     <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
                                                            android:layout_height="wrap_content"
                                                            android:id="@+id/nameInputLayout"
+                                                           android:layout_marginStart="@dimen/side_margin"
+                                                           android:layout_marginEnd="@dimen/side_margin"
+                                                           android:layout_marginTop="@dimen/top_margin"
                                                            android:layout_marginBottom="16dp"
                                                            app:errorEnabled="true"
                                                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -36,6 +41,9 @@
 
     <com.google.android.material.button.MaterialButton android:layout_width="match_parent"
                                                        android:layout_height="wrap_content"
+                                                       android:layout_marginStart="@dimen/side_margin"
+                                                       android:layout_marginEnd="@dimen/side_margin"
+                                                       android:layout_marginTop="@dimen/top_margin"
                                                        android:text="@string/add_done"
                                                        android:id="@+id/doneButton"/>
 
