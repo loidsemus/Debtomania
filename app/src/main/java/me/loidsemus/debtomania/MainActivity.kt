@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.preference.PreferenceManager
+import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
         NavigationUI.setupActionBarWithNavController(this, findNavController(R.id.navHostFragment))
+
+        root.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
     }
 
     override fun onSupportNavigateUp(): Boolean {
